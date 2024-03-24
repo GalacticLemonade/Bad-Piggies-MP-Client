@@ -129,7 +129,7 @@ public class CompactEpisodeSelector : MonoBehaviour
 		}
 		if (this.m_preButtons != null && this.m_preButtons.Count > 0)
 		{
-			for (int k = 0; k < this.m_preButtons.Count; k++)
+			for (int k = 1; k < this.m_preButtons.Count; k++)
 			{
 				this.m_preButtons[k] = UnityEngine.Object.Instantiate<GameObject>(this.m_preButtons[k]);
 				this.m_preButtons[k].transform.parent = this.m_scrollPivot.transform;
@@ -222,7 +222,7 @@ public class CompactEpisodeSelector : MonoBehaviour
 					}
 					if (this.m_centerEpisode == this.CurrentEpisodes[0] && this.m_preButtons != null)
 					{
-						this.SetCenterEpisode(this.m_preButtons[0]);
+						this.SetCenterEpisode(this.m_episodes[0]);
 					}
 					else if (this.m_centerEpisode == this.CurrentEpisodes[this.EpisodeCount - 1])
 					{
@@ -288,9 +288,9 @@ public class CompactEpisodeSelector : MonoBehaviour
 
 	private void SetCenterEpisode(GameObject target)
 	{
-		if (this.m_preButtons != null && this.m_preButtons.Count > 0 && target == this.m_preButtons[0])
+		if (this.m_preButtons != null && this.m_preButtons.Count > 0 && target == this.m_episodes[0])
 		{
-			this.m_centerEpisode = ((!this.m_isRotated) ? this.m_preButtons[0] : this.m_episodesToggled[0]);
+			this.m_centerEpisode = ((!this.m_isRotated) ? this.m_episodes[0] : this.m_episodesToggled[0]);
 		}
 		else
 		{
@@ -313,7 +313,7 @@ public class CompactEpisodeSelector : MonoBehaviour
 			UserSettings.SetInt(CompactEpisodeSelector.CurrentSandboxEpisodeKey, index);
 			if (index == 0 && this.m_preButtons != null)
 			{
-				this.SetCenterEpisode(this.m_preButtons[0]);
+				this.SetCenterEpisode(this.m_episodes[0]);
 			}
 			else
 			{
@@ -326,7 +326,7 @@ public class CompactEpisodeSelector : MonoBehaviour
 			UserSettings.SetString(CompactEpisodeSelector.CurrentEpisodeKey, this.m_episodes[index].name);
 			if (index == 0 && this.m_preButtons != null)
 			{
-				this.SetCenterEpisode(this.m_preButtons[0]);
+				this.SetCenterEpisode(this.m_episodes[0]);
 			}
 			else
 			{
@@ -344,7 +344,7 @@ public class CompactEpisodeSelector : MonoBehaviour
 		{
 			if (this.m_preButtons != null && this.m_preButtons.Count > 1)
 			{
-				this.SetCenterEpisode(this.m_preButtons[0]);
+				this.SetCenterEpisode(this.m_episodes[0]);
 			}
 			else
 			{
@@ -371,7 +371,7 @@ public class CompactEpisodeSelector : MonoBehaviour
 					int num3 = Mathf.Clamp(i, 0, this.EpisodeCount - 2);
 					if (num3 == 0 && this.m_preButtons != null)
 					{
-						this.SetCenterEpisode(this.m_preButtons[0]);
+						this.SetCenterEpisode(this.m_episodes[0]);
 					}
 					else
 					{
@@ -410,7 +410,7 @@ public class CompactEpisodeSelector : MonoBehaviour
 		}
 		if (this.m_preButtons != null && this.m_preButtons.Count > 0)
 		{
-			for (int k = 0; k < this.m_preButtons.Count; k++)
+			for (int k = 1; k < this.m_preButtons.Count; k++)
 			{
 				float time3 = 1f / (this.xMax - this.xMin) * (Mathf.Abs(this.m_preButtons[k].transform.position.x) - this.xMin);
 				float num3 = Mathf.Clamp01(this.scalingCurve.Evaluate(time3));
@@ -450,7 +450,7 @@ public class CompactEpisodeSelector : MonoBehaviour
 		}
 		if (this.m_preButtons != null && this.m_preButtons.Count > 0)
 		{
-			for (int k = 0; k < this.m_preButtons.Count; k++)
+			for (int k = 1; k < this.m_preButtons.Count; k++)
 			{
 				this.m_preButtons[k].transform.localPosition = Vector3.left * this.m_preButtonsOffsets[k] * (float)(k + 1);
 			}
@@ -461,7 +461,7 @@ public class CompactEpisodeSelector : MonoBehaviour
 			int @int = UserSettings.GetInt(CompactEpisodeSelector.CurrentSandboxEpisodeKey, 1);
 			if (Mathf.Clamp(@int, 0, this.m_episodesToggled.Count - 1) == 0 && this.m_preButtons != null)
 			{
-				this.SetCenterEpisode(this.m_preButtons[0]);
+				this.SetCenterEpisode(this.m_episodes[0]);
 			}
 			else
 			{
@@ -470,7 +470,7 @@ public class CompactEpisodeSelector : MonoBehaviour
 		}
 		else if (this.m_preButtons != null && this.m_preButtons.Count > 1)
 		{
-			this.SetCenterEpisode(this.m_preButtons[0]);
+			this.SetCenterEpisode(this.m_episodes[0]);
 		}
 		else
 		{
@@ -669,7 +669,7 @@ public class CompactEpisodeSelector : MonoBehaviour
 		int num2 = Mathf.Clamp(num, 0, this.EpisodeCount - 2);
 		if (num2 == 0 && this.m_preButtons != null)
 		{
-			this.SetCenterEpisode(this.m_preButtons[0]);
+			this.SetCenterEpisode(this.m_episodes[0]);
 		}
 		else
 		{

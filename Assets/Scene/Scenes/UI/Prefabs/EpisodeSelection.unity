@@ -2584,7 +2584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameData: {fileID: 11400000, guid: e69009bcc1fcb4a74ead51a220b18867, type: 2}
   m_preButtons:
-  - {fileID: 1813164476138917, guid: d86a53032913b3bd49b7526b3483151b, type: 3}
+  - {fileID: 0}
   - {fileID: 1262122681755869, guid: 24f407144d1c1383424f7ed537858c13, type: 3}
   m_episodes:
   - {fileID: 1741161517565993, guid: e098d7e9085d49a44731c5e3bdcf61a6, type: 3}
