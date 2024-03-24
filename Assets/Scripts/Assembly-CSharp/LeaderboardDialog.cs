@@ -508,7 +508,7 @@ public class LeaderboardDialog : TextDialog
 
 	private int SeasonDaysLeft()
 	{
-		return (0 - Singleton<TimeManager>.Instance.ServerTime.DayOfWeek + 7) % 7;
+		return 1; //(0 - Singleton<TimeManager>.Instance.ServerTime.DayOfWeek + 7) % 7;
 	}
 
 	public void OpenCupView()
