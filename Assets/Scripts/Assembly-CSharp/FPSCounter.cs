@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class FPSCounter : MonoBehaviour
 {
+	/*
 	private void Awake()
 	{
 		base.enabled = false;
@@ -44,4 +45,5 @@ public class FPSCounter : MonoBehaviour
 	private float timeleft;
 
 	private Stopwatch m_stopwatch = new Stopwatch();
+	*/
 }
