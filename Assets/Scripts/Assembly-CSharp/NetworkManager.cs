@@ -168,6 +168,7 @@ public class NetworkManager : Singleton<NetworkManager>
 
     private IEnumerator CheckAccess(float timeout)
     {
+        /*
         float startTime = Time.realtimeSinceStartup;
         this.resolvingConnectivity = true;
         Ping ping = new Ping(this.ipAddress);
@@ -211,6 +212,8 @@ public class NetworkManager : Singleton<NetworkManager>
         }
         ping.DestroyPing();
         yield break;
+        */
+        yield return null;
     }
 
     private IEnumerator WaitFallback()
