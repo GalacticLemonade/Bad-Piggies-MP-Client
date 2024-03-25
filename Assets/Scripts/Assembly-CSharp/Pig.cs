@@ -203,7 +203,7 @@ public class Pig : BasePart
 			Pig.Expressions expression = this.SelectExpression();
 			if (!flag)
 			{
-				this.SetExpression(expression);
+				//this.SetExpression(expression);
 			}
 		}
 		if (!base.contraption.HasComponentEngine(base.ConnectedComponent) && base.contraption.HasPoweredPartsRunning(base.ConnectedComponent))
@@ -499,6 +499,11 @@ public class Pig : BasePart
 
 	public void SetExpression(Pig.Expressions exp)
 	{
+		if (exp == null)
+		{
+			return;
+		}
+		
 		if (this.m_currentExpression != exp)
 		{
 			switch (exp)
