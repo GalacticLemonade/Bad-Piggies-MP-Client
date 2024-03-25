@@ -148,11 +148,11 @@ public class PartSelector : WPFMonoBehaviour, WidgetListener
 			position.y = this.m_scrollList.leftButton.transform.position.y;
 			this.m_toolBox.position = position;
 		}
-		position = this.m_partList.position;
+		//position = this.m_partList.position;
 		if (this.m_scrollList.rightButton.transform.position.y > position.y)
 		{
 			position.y = this.m_scrollList.rightButton.transform.position.y;
-			this.m_partList.position = position;
+			//this.m_partList.position = position;
 		}
 	}
 
