@@ -1468,10 +1468,10 @@ public sealed class LevelManager : WPFMonoBehaviour
         {
             return;
         }
-        if (shop != null && (shop.gameObject.activeInHierarchy || shop.SnoutCoinShop.gameObject.activeInHierarchy))
-        {
-            return;
-        }
+        //if (shop != null && (shop.gameObject.activeInHierarchy || shop.SnoutCoinShop.gameObject.activeInHierarchy))
+        //{
+            //return;
+        //}
         if ((this.gameState == LevelManager.GameState.Running || this.gameState == LevelManager.GameState.Building))
         {
             EventManager.Send(new UIEvent(UIEvent.Type.Pause));
