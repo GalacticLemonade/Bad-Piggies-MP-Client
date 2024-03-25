@@ -8,8 +8,8 @@ public class LootCrateGraphicSpawner : WPFMonoBehaviour
 		{
 			if (LootCrateGraphicSpawner.s_instance == null)
 			{
-				GameObject gameObject = UnityEngine.Object.Instantiate<GameObject>(WPFMonoBehaviour.gameData.m_lootCrateGraphicsSpawner);
-				LootCrateGraphicSpawner.s_instance = gameObject.GetComponent<LootCrateGraphicSpawner>();
+				//GameObject gameObject = UnityEngine.Object.Instantiate<GameObject>(WPFMonoBehaviour.gameData.m_lootCrateGraphicsSpawner);
+				//LootCrateGraphicSpawner.s_instance = gameObject.GetComponent<LootCrateGraphicSpawner>();
 			}
 			return LootCrateGraphicSpawner.s_instance;
 		}
