@@ -49,7 +49,7 @@ public class DessertSelector : MonoBehaviour, WidgetListener
 			num += feedingPrize.rangeWidth;
 		}
 		this.m_totalRangeWidth = num;
-		ScrapButton.Instance.EnableButton(false);
+		//ScrapButton.Instance.EnableButton(false);
 	}
 
 	private void Start()
