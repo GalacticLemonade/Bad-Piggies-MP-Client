@@ -89,7 +89,7 @@ public class LevelComplete : WPFMonoBehaviour
     private IEnumerator Start()
     {
         this.bShakeCamera = false;
-        PlayerProgressBar.Instance.CanLevelUp = false;
+        //PlayerProgressBar.Instance.CanLevelUp = false;
         this.m_objectiveOne.GetComponent<Collider>().enabled = false;
         this.m_objectiveTwo.GetComponent<Collider>().enabled = false;
         this.m_objectiveThree.GetComponent<Collider>().enabled = false;
@@ -548,7 +548,7 @@ public class LevelComplete : WPFMonoBehaviour
         }
         base.StartCoroutine(CoroutineRunner.DelayActionSequence(delegate
         {
-            PlayerProgressBar.Instance.CanLevelUp = true;
+            //PlayerProgressBar.Instance.CanLevelUp = true;
         }, thirdStarTime + 1.5f, false));
         base.StartCoroutine(this.ShowControls(thirdStarTime + 1.5f));
         base.StartCoroutine(this.ShowEpisodeThreeStarred(thirdStarTime + 2f));
