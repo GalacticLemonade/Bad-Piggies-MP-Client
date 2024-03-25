@@ -464,35 +464,35 @@ public class LevelComplete : WPFMonoBehaviour
         if (GameProgress.ExperienceGiven(xpTypeOneStar, sceneKey) == 0)
         {
             GameProgress.ReportExperienceGiven(xpTypeOneStar, sceneKey);
-            PlayerProgressBar.Instance.DelayUpdate();
+            //PlayerProgressBar.Instance.DelayUpdate();
             int count = Singleton<PlayerProgress>.Instance.AddExperience(xpTypeOneStar);
             this.AddExperienceParticles(this.m_starOne, count, firstStarTime + coinEffectDelay);
         }
         if ((challenge1CompletedPreviously || challenge1Completed || challenge2CompletedPreviously || challenge2Completed) && GameProgress.ExperienceGiven(xpTypeTwoStars, sceneKey) == 0)
         {
             GameProgress.ReportExperienceGiven(xpTypeTwoStars, sceneKey);
-            PlayerProgressBar.Instance.DelayUpdate();
+            //PlayerProgressBar.Instance.DelayUpdate();
             int count2 = Singleton<PlayerProgress>.Instance.AddExperience(xpTypeTwoStars);
             this.AddExperienceParticles(this.m_starTwo, count2, secondStarTime + coinEffectDelay);
         }
         if (challenge1Completed && challenge2CompletedPreviously && GameProgress.ExperienceGiven(xpTypeThreeStars, sceneKey) == 0)
         {
             GameProgress.ReportExperienceGiven(xpTypeThreeStars, sceneKey);
-            PlayerProgressBar.Instance.DelayUpdate();
+            //PlayerProgressBar.Instance.DelayUpdate();
             int count3 = Singleton<PlayerProgress>.Instance.AddExperience(xpTypeThreeStars);
             this.AddExperienceParticles(this.m_starTwo, count3, secondStarTime + coinEffectDelay);
         }
         else if (challenge1Completed && challenge2CompletedPreviously && GameProgress.ExperienceGiven(xpTypeThreeStars, sceneKey) == 0)
         {
             GameProgress.ReportExperienceGiven(xpTypeThreeStars, sceneKey);
-            PlayerProgressBar.Instance.DelayUpdate();
+            //PlayerProgressBar.Instance.DelayUpdate();
             int count4 = Singleton<PlayerProgress>.Instance.AddExperience(xpTypeThreeStars);
             this.AddExperienceParticles(this.m_starThree, count4, thirdStarTime + coinEffectDelay);
         }
         else if ((challenge1CompletedPreviously || challenge1Completed) && (challenge2CompletedPreviously || challenge2Completed) && GameProgress.ExperienceGiven(xpTypeThreeStars, sceneKey) == 0)
         {
             GameProgress.ReportExperienceGiven(xpTypeThreeStars, sceneKey);
-            PlayerProgressBar.Instance.DelayUpdate();
+            //PlayerProgressBar.Instance.DelayUpdate();
             int count5 = Singleton<PlayerProgress>.Instance.AddExperience(xpTypeThreeStars);
             this.AddExperienceParticles(this.m_starThree, count5, thirdStarTime + coinEffectDelay);
         }
@@ -609,7 +609,7 @@ public class LevelComplete : WPFMonoBehaviour
         {
             return;
         }
-        PlayerProgressBar.Instance.AddParticles(target, count, delay, 0f, null);
+        //PlayerProgressBar.Instance.AddParticles(target, count, delay, 0f, null);
     }
 
     private BasePart.PartType GetNewRacePart(int newStars)
