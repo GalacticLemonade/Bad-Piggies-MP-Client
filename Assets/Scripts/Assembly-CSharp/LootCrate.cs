@@ -27,7 +27,7 @@ public class LootCrate : Collectable
 		this.originalCratePosition = base.transform.position;
 		if (this.dialog == null)
 		{
-			//this.dialog = LootCrate.SpawnLootCrateOpeningDialog();
+			this.dialog = LootCrate.SpawnLootCrateOpeningDialog();
 		}
 		base.rigidbody.useGravity = false;
 		base.rigidbody.isKinematic = true;
@@ -35,7 +35,6 @@ public class LootCrate : Collectable
 
 	protected override void OnGoalEnter(BasePart part)
 	{
-		/*
 		if (this.collected || WPFMonoBehaviour.levelManager.gameState == LevelManager.GameState.Completed)
 		{
 			return;
@@ -69,7 +68,6 @@ public class LootCrate : Collectable
 		{
 			this.OnCollect();
 		}
-		*/
 	}
 
 	protected override void OnReset()
