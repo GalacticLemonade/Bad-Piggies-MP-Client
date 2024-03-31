@@ -6913,15 +6913,14 @@ GameObject:
   - component: {fileID: 1549}
   - component: {fileID: 1628}
   - component: {fileID: 2076}
-  - component: {fileID: 2075}
   - component: {fileID: 2074}
   m_Layer: 10
-  m_Name: UnlockFullContentButton
+  m_Name: MultiplayerMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &520
 GameObject:
   m_ObjectHideFlags: 1
@@ -44105,20 +44104,6 @@ MonoBehaviour:
   m_pivotX: 0
   m_pivotY: 0
   m_updateCollider: 1
---- !u!114 &2075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 917195e82a6596a343a81e228b6203e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_condition: 1
-  m_not: 0
 --- !u!114 &2076
 MonoBehaviour:
   m_ObjectHideFlags: 0

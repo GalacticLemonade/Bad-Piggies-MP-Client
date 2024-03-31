@@ -17,6 +17,13 @@ TagManager:
   - ParallaxLayerFurther
   - IceSurface
   - ParallaxLayerFixedFollowCamera
+  - ParallaxLayerForeground
+  - Static
+  - ParallaxLayerFar
+  - ParallaxLayerNear
+  - ParallaxLayerSky
+  - Clouds
+  - World
   layers:
   - Default
   - TransparentFX
