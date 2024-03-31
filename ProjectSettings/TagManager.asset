@@ -3,7 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - HUDCamera
+  - ParticleEmitter
+  - Collectable
+  - Contraption
+  - Challenge
+  - Sharp
+  - DynamicCollectable
+  - Prop
+  - KingPigMouth
+  - Ground
+  - ParallaxLayerFurther
+  - IceSurface
+  - ParallaxLayerFixedFollowCamera
   layers:
   - Default
   - TransparentFX
