@@ -27,6 +27,10 @@ public class MainMenu : MonoBehaviour
 		{
 			this.m_settingsPopup.SetActive(false);
 		}
+		if (this.m_multiplayerPopup != null)
+		{
+			this.m_multiplayerPopup.SetActive(false);
+		}
 		if (Singleton<BuildCustomizationLoader>.Instance.IAPEnabled)
 		{
 			if (GameProgress.GetSandboxUnlocked("S-F"))
@@ -617,6 +621,9 @@ public class MainMenu : MonoBehaviour
 
 	[SerializeField]
 	private GameObject m_settingsPopup;
+	
+	[SerializeField]
+	private GameObject m_multiplayerPopup;
 
 	[SerializeField]
 	private GameObject m_pigRescueRewardPrefab;
