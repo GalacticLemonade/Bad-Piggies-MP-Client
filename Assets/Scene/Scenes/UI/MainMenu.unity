@@ -45431,7 +45431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &655722108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46126,8 +46126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_id: ab0c6536-dfc1-46a1-8276-59280b355188
-  m_scaleX: 1
-  m_scaleY: 1
+  m_scaleX: 0.75
+  m_scaleY: 0.75
   m_pivotX: 0
   m_pivotY: 0
   m_updateCollider: 1
