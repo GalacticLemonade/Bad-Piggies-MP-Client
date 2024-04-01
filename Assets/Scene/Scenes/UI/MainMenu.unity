@@ -46583,13 +46583,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   methodToCall:
-    m_targetObject: {fileID: 0}
-    m_targetComponent: 
-    m_methodToInvoke: 
+    m_targetObject: {fileID: 655722107}
+    m_targetComponent: MultiplayerPopup
+    m_methodToInvoke: Connect
     m_parameters: []
-  messageTargetObject: {fileID: 0}
-  targetComponent: MainMenu
-  methodToInvoke: OpenShop
+  messageTargetObject: {fileID: 655722107}
+  targetComponent: MultiplayerPopup
+  methodToInvoke: Connect
   messageParameter: 
   eventToSend:
     m_event:

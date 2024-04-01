@@ -42,6 +42,11 @@ public class MultiplayerPopup : TextDialog
 	{
 		base.Close();
 	}
+	
+	public void Connect()
+	{
+		Debug.Log("hi");
+	}
 
 	private void OnDestroy()
 	{
