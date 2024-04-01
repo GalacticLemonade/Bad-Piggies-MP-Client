@@ -46424,7 +46424,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Multiplayer
+  m_text: Multiplayer menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18f7224a71fb61e40ab9a233af402347, type: 2}
   m_sharedMaterial: {fileID: -4201648597369144772, guid: 18f7224a71fb61e40ab9a233af402347, type: 2}
